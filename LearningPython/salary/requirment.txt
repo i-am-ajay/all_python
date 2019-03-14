@@ -1,0 +1,24 @@
+Global Variables
+    * Fox and Prod Head Mapping - FOX_PROD_SALHEADS
+    * Fox Head Names and their position mapping - HEAD_SEQUENCE
+
+Modules
+    * get_sheet - To read given workbook and get excel sheet by name
+        @Functions
+            * To get sheet - def get_sheet(file_name, sheet_name)
+    * create_maps - To create maps
+        @Functions
+            * To create Head and Sequence map - def create_head_sequence()
+            * To create Fox Heads and Prod Heads Map - def head_mapping()
+
+    * compare_salary - To compare prod and foxpro salary
+        @Functionality -
+            ^ get excel sheet
+            ^ Start loop : read excel rows
+                ^ Get Employee gaa number column position using global_vars.HEAD_SEQUENCE map
+                ^ Use sheet.cell(row =Number, columns= col_number).value to get gaa number
+                ^ Get resultset of employee employee for specified pay period from payslip
+                ^ Start loop : read resultset
+                    $
+        @Functions
+            * To

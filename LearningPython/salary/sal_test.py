@@ -1,0 +1,3 @@
+import salary
+
+print(salary)
